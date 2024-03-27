@@ -1,0 +1,73 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TUGAS PRAKTIKUM 2"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:background="@color/black"
+            android:padding="10dp"/>
+
+        <ImageView
+            android:id="@+id/notedImage"
+            android:layout_width="412dp"
+            android:layout_height="104dp"
+            android:layout_marginTop="190dp"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/noted" />
+
+        <TextView
+            android:id="@+id/addNoted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Tambahkan Catatan"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"/>
+
+        <EditText
+            android:id="@+id/titleNoted"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Judul"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:layout_gravity="center_horizontal"/>
+
+        <EditText
+            android:id="@+id/containedNoted"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Isi"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            android:id="@+id/btnToThirdActivity"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="325dp"
+            android:text="Kirim"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+</ScrollView>
