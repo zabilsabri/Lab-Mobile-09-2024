@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="25dp"
+        android:gravity="center"
+        android:background="@android:color/black">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Tugas Praktikum 2"
+            android:textStyle="bold"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/EditImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="230dp"
+        android:src="@drawable/imagepost"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/EditText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="text"
+        android:background="@drawable/bckg"
+        android:padding="12dp"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/EditText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="text"
+        android:background="@drawable/bckg"
+        android:padding="12dp"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SEND"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:onClick="pindah"
+        android:backgroundTint="@android:color/black"/>
+</LinearLayout>
